@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RANIKHET FITNESS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <style>
+                    /* css reset */
+        body{
+            padding: 0px;
+            margin:0px;
+            background-image: url('img/bg.jpg');
+            color: white;
+            background-size:cover;
+            font-family: 'Teko', sans-serif;
+            
+        }
+        .left{
+            /* border:2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 16px;
+            left: 34px;
+            
+        }
+        .left div{
+            text-align: center;
+        }
+        .left img{
+            width: 98px;
+            filter: invert(100%);
+            /* filter: invert(100%); */  /*to make opposite of color */
+
+        }
+        .mid{
+            /* border: 2px solid green; */
+            margin: 16px auto;
+            width: 600px;
+        }
+        .right{
+            /* border: 2px solid rgb(214, 214, 211); */
+            display: inline-block;
+            position: absolute;
+            top: 21px;
+            right: 34px;
+            padding: 4px 2px;
+            border-radius: 15px;
+            
+        }
+        li{
+            padding:4px 10px;
+            display: inline-block;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+        }
+        .navi  a:hover{
+            cursor: pointer;
+          
+            color: rgb(239, 239, 239);
+            color: rgb(153, 148, 148);
+        }
+        li a.active{
+            text-decoration: underline; 
+        }
+       .btn{
+        border: 1px solid  gray;
+        margin: 3.5px 8px;
+    padding: 1px 17px;
+    border-radius: 11px;
+    font-size: 13px;
+        cursor: pointer;
+        font-family: 'Oswald', sans-serif;
+       }
+       .btn:hover{
+        background-color: gray;
+       }
+       .container{
+        padding: 33px 46px;
+    margin: 69px 165px;
+        border: 2px solid gray;
+        width: 30%;
+        border-radius: 5px;
+        
+       }
+       .container h1{
+        
+        text-align: center;
+       }
+    .form-group {
+        margin:4px auto;
+        padding: 2px;
+        text-align: center;      
+    }
+    .form-group input{
+         border: 2px solid gray;
+         border-radius: 11px;
+        padding: 4px 74px;
+        font-family: 'Teko', sans-serif;
+        text-align: center;
+        font-size: 19px;
+        
+    }
+    .container .btn{
+        padding: 3px 150px;
+    margin: 2px 54px;
+        text-align: center;  
+        font-size: 19px;
+        font-family: 'Teko', sans-serif;
+        
+    } 
+    #gender{
+        border: 2px solid gray;
+        background-color: white;
+        color: gray;
+         border-radius: 11px;
+         margin: 5px 50px;
+        padding: 4px 74px;
+        font-family: 'Teko', sans-serif;
+        text-align: center;
+        font-size: 19px;
+    }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <img src="img/lo.png" alt="">
+        <div >Ranikhet GYM</div>
+    </div>
+    <div class="mid">
+        <nav class="navi">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="right">
+        <button class="btn">Call us now</button>
+        <button class="btn">Email us</button>
+    </div>
+    <div class="container">
+        <h1>Join the best gym of Ranikhet</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+               <input type="text" placeholder="Enter your Age">
+            </div>
+            <div  id="gender">
+                 Male<input type="radio" name="mygender"> Female<input type="radio" name="mygender">
+           </div>
+             <div class="form-group">
+                 <input type="text" placeholder="Enter your Locality">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Enter your Contact no.">
+                </div>
+                <button class="btn">Submit</button>
+             
+
+          </form>
+    </div>
+</body>
+</html>
